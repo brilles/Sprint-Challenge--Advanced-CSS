@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+The difference between an adaptive website and a fully responsive website is that while an adaptive website uses media queries with layout widths hard coded(only) for specific devices, a fully responsive website also accomodates all the devices between the breakpoints. With fully responsive websites the media queries constrain the responsive units in order for a better experience that seamlessly transitions when the viewport is changed.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first design is when the general styles are for mobile devices and as the viewport changes, the layput expands and likely gain features. With mobile first the media queries are min-width so as the viewport expands, those breakpoints trigger for tablet and desktop for example. Desktop first design is essentially the opposite. Where you begin coding the desktop site first and use max-width in the media queries to change the layout of the website as the viewport shrinks.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It reduces calculation complexity. If the base font-size is 16px then 1rem is 16px. Therefore 10px is 0.625rem. Calculations like this are not easy so with 62.5% in the html tag it makes the calculation is easier. This means that font-size: 62.5% is 10px (because 16 times .625 is 10) and for example 1.4rem is 14px. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+I would say: Preprocessing is a way of making more with less. Its a bigger and better syntax for CSS written in a slightly differnet language(LESS for example). You write your styling in a syntax like LESS, then compile it to CSS pre runtime. Preprocessors can greatly increase productivity.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is mixins because they add an abstraction layer that allows you to focus on more complicated aspects of your project. A concept in preprocessing that is chalenging for me is the combination of variables and mixins. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
