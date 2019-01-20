@@ -191,6 +191,7 @@ p {
   justify-content: space-around;
   margin: 2.3% 0 1.5% 0;
   font-size: 1.6rem;
+  /* Animations */
 }
 @media (max-width: 500px) {
   .navigation .header nav {
@@ -205,6 +206,14 @@ p {
 }
 .navigation .header nav a:last-of-type {
   margin-right: 0;
+}
+.navigation .header nav a:hover {
+  background-color: #454a59;
+  color: white;
+  padding: 3px;
+  transition: 0.8s;
+  border-radius: 3px;
+  font-size: 1.8rem;
 }
 footer {
   color: #22283B;
